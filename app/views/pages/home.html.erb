@@ -1,2 +1,18 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<% if user_signed_in? %>
+	<table class="posts">
+		<tr>
+			<td><h2 class="post">Ask a question or post a response.</h2>
+				<%= render 'shared/post_form' %>
+				<%= render 'shared/feed' %>
+			</td>
+			<%= render 'shared/sidebar' %>
+		</tr>
+	</table>
+<% else %>
+	<table class="welcome">
+		<tr>
+			<td><%= render 'shared/welcome' %></td>
+			<%= render 'shared/sidebar' %>
+		</tr>
+	</table>
+<% end %>

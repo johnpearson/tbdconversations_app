@@ -1,0 +1,472 @@
+/* Application.css for TBD Support Application */
+
+/* General Styling */
+
+body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, code, del, dfn, em, img, q, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, dialog, figure, footer, header, hgroup, nav, section {margin:0;padding:0;border:0;font-weight:inherit;font-style:inherit;font-size:100%;font-family:inherit;vertical-align:baseline;}
+article, aside, dialog, figure, footer, header, hgroup, nav, section {
+	display:block;
+}
+
+body {
+	min-width: 980px;
+	background: #ADD8E6;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 75%;
+}
+
+/* Custom Styling */
+
+container {
+	width: 980px;
+	color: #222;
+	background: #fff;
+}
+
+header {
+	margin-top: 10px;
+	width: 980px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 10px;
+	background-color: #fff;
+}
+
+header img {
+	padding: .5em;
+	background: #fff;
+}
+
+section {
+	margin-top: 5px;
+	width: 980px;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 120%;
+	padding-bottom: 5px;
+	background: #fff;
+}
+
+section h1 {
+	font-size: 200%;
+}
+
+div.username {
+	text-align: right;
+	margin-right: 1em;
+	font-size: 120%;
+	font-style: italic;
+	font-weight: bold;
+}
+
+h1 {
+	padding: 10px;
+}
+
+h2 {
+	padding-left: 10px;
+}
+
+p {
+	padding-left: 15px;
+}
+
+/* Navigation Styling */
+
+nav {
+	padding: 0 0em;
+	white-space: nowrap;
+	text-align: right;
+	font-size: 105%;
+}
+
+nav.navheader {
+	margin-top: 0px;
+	background: #dcdcdc;
+}
+
+nav.navheader p {
+	float: left;
+}
+
+nav p {
+	font-size: 100%;
+	padding: 0.5em;
+}
+
+nav ul {
+	margin: 0;
+	padding: 0;
+}
+
+nav ul li {
+	list-style-type: none;
+	display: inline-block;
+	padding: 0.5em 0;
+}
+
+nav ul li a {
+	padding: 0 20px;
+	font-size: 120%;
+	font-weight: bold;
+	text-decoration: none;
+	color: black;
+}
+
+nav ul li a:visited {
+	color: gray;
+}
+
+nav ul li a:hover {
+	text-decoration: none;
+}
+
+nav.search {
+	float: right;
+}
+
+#user_nav {
+	text-align: right;
+	padding-right: 1em;
+	padding-top: 1em;
+}
+
+nav.search {
+	margin-top: 1.5em;
+	float: right;
+	margin-right: 1em;
+}
+
+/* Link Styling */
+
+a {
+	padding-left: 15px;
+	color: black;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+a:visited {
+	padding-left: 15px;
+	color: gray;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+a.link_button {
+	margin-right: 10px;
+	text-align: center;
+	display: block;
+	color: black;
+	background: url('images/button.png') no-repeat;
+	font-size: 105%;
+	font-weight: bold;
+	padding: 10px 10px;
+	margin-top: 5px;
+	text-decoration: none;
+}
+
+p a:link {
+	color: black;
+	text-decoration: none;
+}
+
+p a:visited {
+	color: gray;
+	text-decoration: none;
+}
+
+a:link {
+	color: black
+	text-decoration: none;
+}
+
+li a:link {
+	color: black;
+	text-decoration: none;
+}
+
+li a:visited {
+	color: gray;
+	text-decoration: none;
+}
+
+/* Footer */
+
+.footer {
+	background: #ADD8E6;
+	font-size: 100%;
+	text-align: center;
+	margin-top: 20px;
+
+}
+
+.footer p {
+	padding-bottom: 10px;
+}
+
+nav.footer {
+	font-size: 100%;
+	text-align: center;
+}
+
+/* User index page */
+
+.users {
+	padding: 10px;
+}
+
+table.profile {
+	width: 100%;
+	margin-bottom: 0;
+}
+
+td.main {
+	width: 60%;
+	padding: 1em;
+}
+
+td.sidebar {
+	width: 30%;
+	height: 30%;
+	padding: 1em;
+	vertical-align: top;
+	background: #F0E68C;
+}
+
+div.gravatar {
+	padding-left: 10px;
+}
+
+span.sociallinks  {
+	padding-left: 7em;
+}
+
+/* Form, Error Messages, and Flash Messages */
+
+#flash_alert {
+	padding-left: 1em;
+	width: 35%;
+	font-size: 150%;
+	background: #FF6347;
+}
+
+#flash_notice {
+	padding-left: 1em;
+	padding-top: .25em;
+	padding-bottom: .25em;
+	width: 25%;
+	font-size: 125%;
+	background: #F0E68C;
+}
+
+#flash_success {
+	padding-left: 1em;
+	padding-top: .25em;
+	padding-bottom: .25em;
+	width: 25%;
+	font-size: 125%;
+	background: #F0E68C;
+	
+}
+
+.field_with_errors {
+	margin-left: 10px;
+	margin-top: 10px;
+	padding: 2px;
+	background-color: red;
+	display: table;
+}
+
+.field_with_errors label {
+	color: #fff;
+}
+
+#error_explanation {
+	width: 400px;
+	border: 2px solid red;
+	padding: 7px;
+	padding-bottom: 12px;
+	margin-left: 10px;
+	margin-bottom: 20px;
+	background-color: #f0f0f0;
+}
+
+#error_explanation h2 {
+	text-align: left;
+	font-weight: bold;
+	padding: 5px 5px 5px 15px;
+	font-size: 12px;
+	margin: -7px;
+	background-color: #c00;
+	color: #fff;
+}
+
+#error_explanation p {
+	color: #333;
+	margin-bottom: 0;
+	padding: 5px;
+}
+
+#error_explanation ul li {
+	padding-top: 10px;
+	font-size: 12px;
+	list-style: none;
+	padding-left: 1em;
+}
+
+/* Welcome Page */
+
+ul.welcome {
+	margin-top: .5em;
+}
+
+.welcome li {
+	padding: .5em;
+	font-style: italic;
+	list-style: none;
+}
+
+/* Users home page */
+
+ul.users {
+	margin-top: .5em;
+}
+
+.users li {
+	list-style: none;
+}
+
+/* Posts styling */
+
+h1.post {
+  	margin-bottom: 0.3em;
+}
+
+h2.post {
+	margin-top: 1em;
+	margin-left: 1em;
+}
+
+table.posts {
+	margin-left: 1em;
+}
+
+table.posts tr {
+  	height: 70px;
+}
+
+table.posts tr td.gravatar {
+  	border-top: 1px solid #ccc;
+  	vertical-align: top;
+  	width: 50px;
+}
+
+table.posts tr td.post {
+  	border-top: 1px solid #ccc;
+  	vertical-align: top;
+  	padding-top: 10px;
+	padding-left: 10px;
+}
+
+table.posts tr td.post span.timestamp {
+  	display: block;
+  	font-size: 85%;
+  	color: #666;
+}
+
+table.posts tr td.post span.user a {
+	padding: 0px;
+	text-decoration: none;
+}
+
+div.user_info img {
+  	padding-right: 0.1em;
+}
+
+div.user_info a {
+  	text-decoration: none;
+}
+
+div.user_info span.user_name {
+  	position: absolute;
+}
+
+div.user_info span.posts {
+  	font-size: 80%;
+}
+
+form.new_post {
+  	margin-bottom: 2em;
+	margin-left: 1em;
+}
+
+form.new_post textarea {
+  	height: 4em;
+  	margin-bottom: 0;
+}
+
+ul.posts {
+	margin-top: .5em;
+}
+
+.posts li {
+	padding: .5em;
+	font-style: italic;
+	list-style: none;
+}
+
+/* Pagination Links */
+
+div.pagination a {
+	padding: 0px;
+	text-decoration: none;
+	color: black;
+}
+
+div.pagination a visited {
+	padding 0px;
+	text-decoration: none;
+	color: gray;
+}
+
+/* Contact Page */
+
+td.address {
+	padding-top: 1em;
+}
+
+td.address a {
+	padding-left: 0em;
+}
+
+table.contact ul li {
+	list-style-type: none;
+	padding-left: 1em;
+}
+
+td.map {
+	vertical-align: top;
+	width: 40%;
+	padding: 2em;
+	background: #F0E68C;
+}
+
+/* About Page */
+
+.officepics img {
+	padding-left: .5em;
+}
+
+/* Main Text Pages */
+
+.text {
+	margin: 0px;
+}
+
+/* Round corners */
+
+.round {
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+}

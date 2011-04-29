@@ -1,0 +1,29 @@
+<header class="round">
+	<%= link_to logo, root_path %>
+	<nav class="search">
+		<%= image_tag("search_placeholder.png", :alt => "Search")%>
+	</nav>
+	<% if user_signed_in?%>
+	<div class="username">
+		<h2>Signed in as: <%= current_user.name %></h2>
+	</div>
+	<% end %>
+	<nav class="navheader round">
+		<ul>
+			<li><%= link_to "Home", root_path %>
+			<li><%= link_to "Contact", contact_path %> 
+			<li><%= link_to "About", about_path %>
+			<% if current_user.try(:admin?) %>
+			<li><%= link_to "Users", users_path %>
+			<% end %>
+			<% if user_signed_in? %>
+			<li><%= link_to "Profile", user_path(current_user.id) %> 
+			<li><%= link_to "Edit Profile", edit_user_registration_path %> 
+			<li>&nbsp;<%= link_to "Sign out", destroy_user_session_path %>
+			<% else %>
+			<li><%= link_to "Sign up", new_user_registration_path %><b>or</b>
+			<li><%= link_to "Sign in", new_user_session_path %>
+			<% end %>
+		</ul>
+	</nav>
+</header>

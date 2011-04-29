@@ -12,7 +12,6 @@ module ApplicationHelper
 
   # Logo definition for abstraction from header
   def logo
-      logo = image_tag("tbdheader.png", :alt => "TBD Header", :class => "round")
-    end
+    logo = image_tag("tbdheader.png", :alt => "TBD Header", :class => "round")
   end
 end
