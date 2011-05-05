@@ -8,7 +8,13 @@ class UsersController < ApplicationController
   def show
     @user = User.find(params[:id])
     @post = Post.new
-    @posts = @user.posts.paginate(:page => params[:page], :per_page => 10)
+    if current_user.admin?
+      @admin_posts = current_user.posts
+      @user_posts = @user.posts
+      @posts = @admin_posts + @user_posts
+    else
+      @posts = @user.posts.paginate(:page => params[:page], :per_page => 10)
+    end
     @title = @user.name
   end
   
